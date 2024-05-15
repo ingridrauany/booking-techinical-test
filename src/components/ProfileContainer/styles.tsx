@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const ProfileContainerStyled = styled.section`
-  max-width: 500px;
+  max-width: 400px;
 `;

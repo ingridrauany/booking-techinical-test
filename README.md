@@ -4,14 +4,14 @@ Descrever o teste
 
 ## Sumário
 
--   [Overview](#overview)
-    -   [O desafio](#o-desafio)
-    -   [Prints da aplicação](#prints-da-aplicacao)
-    -   [Executando a aplicação](#executando-a-aplicacao)
--   [Meu processo](#meu-processo)
-    -   [Construído com](#construido-com)
-    -   [Melhorias possíveis](#melhorias-possiveis)
--   [Author](#author)
+- [Overview](#overview)
+  - [O desafio](#o-desafio)
+  - [Prints da aplicação](#prints-da-aplicacao)
+  - [Executando a aplicação](#executando-a-aplicacao)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construido-com)
+  - [Melhorias possíveis](#melhorias-possiveis)
+- [Author](#author)
 
 ## Overview
 
@@ -41,11 +41,14 @@ Abra [http://localhost:5138](http://localhost:5138) com seu navegador para ver o
 
 ### ⚙️ Construído com:
 
--   HTML semântico
--   Flexbox/Grid Layout
--   [Vite](https://vitejs.dev/)
--   [React](https://reactjs.org/) - Biblioteca JavaScript
--   [Styled Components](https://styled-components.com/) - Para componentes e estilos
--   `Editorconfig`, `prettier` e `eslint` para formatação e linter de código
+- HTML semântico
+- Flexbox/Grid Layout
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/) - Biblioteca JavaScript
+- [Styled Components](https://styled-components.com/) - Para componentes e estilos
+- `Editorconfig`, `prettier` e `eslint` para formatação e linter de código
 
 ### Melhorias possíveis
+
+- Configurar o axios para ter uma configuração para um endpoint base (que no caso seria: `http://localhost:8000/professionals`)
+- Melhorar o componente ProfileStars para usar algo pronto ou melhor adaptado

@@ -1,4 +1,5 @@
 import { useFetchProfessional } from '@hooks/useFetchProfessional';
+import { User } from 'src/types/User';
 import { LoadingOverlay, Profile, ProfileContainer, Schedule, ScheduleContainer } from '../index';
 import { ContainerStyled } from './styles';
 
@@ -8,7 +9,7 @@ export const Container = () => {
     isLoading,
     isError,
     error,
-  } = useFetchProfessional('f67f4224-b0a1-4b55-9d15-4e48f933fd47');
+  } = useFetchProfessional<User>('f67f4224-b0a1-4b55-9d15-4e48f933fd47');
 
   if (isLoading) {
     return <LoadingOverlay />;

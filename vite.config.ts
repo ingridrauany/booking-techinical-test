@@ -12,6 +12,7 @@ export default defineConfig({
       '@public': path.resolve(__dirname, './public'),
       '@utils': path.resolve(__dirname, './src/utils'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
+      '@services': path.resolve(__dirname, './src/services'),
     },
   },
   plugins: [react()],

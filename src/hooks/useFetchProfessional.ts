@@ -1,12 +1,8 @@
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
+import { fetchProfessional } from '@services/professionalService';
+import { UseQueryResult, useQuery } from '@tanstack/react-query';
+import { User } from 'src/types/User';
 
-const fetchProfessional = async (professionalId: string) => {
-  const { data } = await axios.get(`http://localhost:8000/professionals/${professionalId}`);
-  return data;
-};
-
-export const useFetchProfessional = (professionalId: string) => {
+export const useFetchProfessional = <T = User>(professionalId: string): UseQueryResult<T, Error> => {
   return useQuery({
     queryKey: ['professional', professionalId],
     queryFn: () => fetchProfessional(professionalId),

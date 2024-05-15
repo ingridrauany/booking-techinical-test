@@ -1,24 +1,38 @@
-import { User } from 'src/types/User';
+import { ProfilePros } from 'src/types/Profile';
+import { ProfileStars } from '../ProfileStars';
 import {
   ProfileDescriptionStyled,
   ProfileInfoStyled,
   ProfileNameStyled,
-  ProfilePictureContainer,
+  ProfilePictureContainerStyled,
   ProfilePriceStyled,
   ProfileProfessionStyled,
   ProfileStyled,
   ProfileTimeBoxStyled,
 } from './styles';
 
-export const Profile = ({ name, profession, city, reviews, price, timebox, description, profilePicture }: User) => {
+export const Profile = ({
+  name,
+  profession,
+  city,
+  ratingAverage,
+  price,
+  timebox,
+  description,
+  profilePicture,
+  totalOfReviews,
+}: ProfilePros) => {
   return (
     <ProfileStyled>
-      <ProfilePictureContainer alt={name} src={`https://avatars.githubusercontent.com/${profilePicture}?v=4`} />
+      <ProfilePictureContainerStyled alt={name} src={`https://avatars.githubusercontent.com/${profilePicture}?v=4`} />
       <ProfileInfoStyled>
         <ProfileNameStyled>{name}</ProfileNameStyled>
-        <ProfileProfessionStyled>{profession}</ProfileProfessionStyled>
+        <ProfileProfessionStyled>
+          {profession} | <span>{city}</span>
+        </ProfileProfessionStyled>
+        <ProfileStars ratingAverage={ratingAverage} totalOfReviews={totalOfReviews} />
         <ProfilePriceStyled>R${price}</ProfilePriceStyled>
-        <ProfileTimeBoxStyled>{timebox} minutes</ProfileTimeBoxStyled>
+        <ProfileTimeBoxStyled> / {timebox} minutes</ProfileTimeBoxStyled>
       </ProfileInfoStyled>
       <ProfileDescriptionStyled>{description}</ProfileDescriptionStyled>
     </ProfileStyled>

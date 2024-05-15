@@ -24,7 +24,8 @@
       "@public/*": ["public/*"],
       "@assets/*": ["src/assets/*"],
       "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"]
+      "@hooks/*": ["src/hooks/*"],
+      "@services/*": ["src/services/*"]
     }
   },
   "include": ["src"],

@@ -15,11 +15,11 @@ export const ProfileNameStyled = styled.h1`
 `;
 
 export const ProfilePriceStyled = styled.span`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 `;
 
-export const ProfilePictureContainer = styled.img`
+export const ProfilePictureContainerStyled = styled.img`
   grid-area: photo;
   border-radius: 50%;
   overflow: hidden;
@@ -33,9 +33,22 @@ export const ProfilePictureContainer = styled.img`
   }
 `;
 
-export const ProfileTimeBoxStyled = styled.span``;
+export const ProfileTimeBoxStyled = styled.span`
+  font-size: 0.8rem;
+  font-weight: 500;
+`;
 
-export const ProfileProfessionStyled = styled.div``;
+export const ProfileProfessionStyled = styled.div`
+  color: #0078d7;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  span {
+    color: #485257;
+    text-transform: none;
+  }
+`;
 
 export const ProfileDescriptionStyled = styled.div`
   grid-area: description;
