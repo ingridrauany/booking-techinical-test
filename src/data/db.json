@@ -1,0 +1,52 @@
+{
+  "professionals": [
+    {
+      "id": "f67f4224-b0a1-4b55-9d15-4e48f933fd47",
+      "name": "João Silva",
+      "profession": "Desenvolvedor Web",
+      "city": "São Paulo",
+      "ratingAverage": 4,
+      "totalOfReviews": 20,
+      "price": 100,
+      "timebox": "50",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae ante quis tellus fermentum auctor. Nam tempor molestie lectus, et tincidunt ligula tempus sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent feugiat maximus ipsum sit amet pellentesque. ",
+      "profilePicture": "ingridrauany",
+      "schedule": {
+        "2024-08-19": [
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8f",
+            "time": "08:00",
+            "isReserved": false
+          },
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8g",
+            "time": "09:00",
+            "isReserved": false
+          },
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8h",
+            "time": "10:00",
+            "isReserved": true
+          }
+        ],
+        "2024-08-20": [
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8i",
+            "time": "08:00",
+            "isReserved": false
+          },
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8j",
+            "time": "09:00",
+            "isReserved": false
+          },
+          {
+            "id": "d10b6695-4082-4900-bfa6-28cda525fa8k",
+            "time": "10:00",
+            "isReserved": true
+          }
+        ]
+      }
+    }
+  ]
+}

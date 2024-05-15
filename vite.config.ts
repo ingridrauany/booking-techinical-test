@@ -10,10 +10,11 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@public': path.resolve(__dirname, './public'),
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@hooks': path.resolve(__dirname, './src/hooks'),
     },
   },
   plugins: [react()],
-  base: '/nomedorepositorio',
   test: {
     environment: 'jsdom',
     globals: true,
