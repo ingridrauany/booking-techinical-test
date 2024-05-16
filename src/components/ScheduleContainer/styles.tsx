@@ -1,19 +1,8 @@
 import styled from 'styled-components';
 
-export const ScheduleContainerStyled = styled.section``;
-
-export const ScheduleItemStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const ScheduleDateStyled = styled.div`
-  padding: 10px 20px;
-  text-align: center;
-
-  .weekDay {
-    font-size: 0.8rem;
-  }
+export const ScheduleContainerStyled = styled.section`
+  box-shadow: 0px 3px 24px -7px rgba(0, 0, 0, 0.75);
+  position: relative;
 `;
 
 export const ScheduleHeaderStyled = styled.div`

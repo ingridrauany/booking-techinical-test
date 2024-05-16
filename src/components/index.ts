@@ -1,7 +1,10 @@
+export { CalendarHeaderDate } from './CalendarHeaderDate/index';
 export { Container } from './Container/index';
 export { LoadingOverlay } from './LoadingOverlay/index';
 export { ProfileContainer } from './ProfileContainer/index';
-export { Profile } from './ProfileInfo/index';
+export { ProfileInfo } from './ProfileInfo/index';
+export { ProfileName } from './ProfileName/index';
+export { ProfileStars } from './ProfileStars';
 export { Schedule } from './Schedule';
+export { ScheduleButton } from './ScheduleButton/index';
 export { ScheduleContainer } from './ScheduleContainer/index';
-

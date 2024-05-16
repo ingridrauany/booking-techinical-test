@@ -1,10 +1,5 @@
-import { cleanup } from '@testing-library/react';
-import { afterEach, describe, expect, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { formatDateToBrazilian } from './formatDateToBrazilian';
-
-afterEach(() => {
-  cleanup();
-});
 
 describe('formateDateToBrazilian', () => {
   it('if the param is empty, should return a empty string', () => {

@@ -1,6 +1,6 @@
 import { useFetchProfessional } from '@hooks/useFetchProfessional';
 import { User } from 'src/types/User';
-import { LoadingOverlay, Profile, ProfileContainer, Schedule, ScheduleContainer } from '../index';
+import { LoadingOverlay, ProfileContainer, ProfileInfo, Schedule, ScheduleContainer } from '../index';
 import { ContainerStyled } from './styles';
 
 export const Container = () => {
@@ -24,7 +24,7 @@ export const Container = () => {
       {professional && (
         <>
           <ProfileContainer>
-            <Profile {...professional} />
+            <ProfileInfo {...professional} />
           </ProfileContainer>
           <ScheduleContainer>
             <Schedule schedule={professional.schedule} />

@@ -11,7 +11,7 @@ import {
   ProfileTimeBoxStyled,
 } from './styles';
 
-export const Profile = ({
+export const ProfileInfo = ({
   name,
   profession,
   city,
