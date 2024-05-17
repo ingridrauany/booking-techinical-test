@@ -21,9 +21,11 @@ Criar uma tela que mostre dados de um profissional e seus horários para atendim
 ### Prints da aplicação
 
 Desktop:
+
 ![](./public/desktop.png)
 
 Mobile:
+
 ![](./public/mobile.png)
 
 ### Executando a aplicação
@@ -58,7 +60,7 @@ npm run test
 
 ## Meu processo
 
-### ⚙️ Construído com:
+### Construído com:
 
 - HTML semântico
 - Flexbox/Grid Layout
@@ -68,7 +70,7 @@ npm run test
 - `Editorconfig`, `prettier` e `eslint` para formatação e linter de código
 - [json-server](https://github.com/typicode/json-server) para simular uma API para consumo pelo frontend
 - [React Query](https://tanstack.com/query/latest): para lidar com as chamadas aos endpoint (lidando melhor com loading e erros)
-- [Vitest](https://vitest.dev/): para escrita de teste unitários
+- [Vitest](https://vitest.dev/) e [Testing Library](https://testing-library.com/): para escrita de teste unitários
 
 ### Próximos passos
 
