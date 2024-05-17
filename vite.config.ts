@@ -7,12 +7,13 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@public': path.resolve(__dirname, './public'),
       '@utils': path.resolve(__dirname, './src/utils'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@services': path.resolve(__dirname, './src/services'),
+      '@customTypes': path.resolve(__dirname, './src/types'),
+      '@components': path.resolve(__dirname, './src/components'),
     },
   },
   plugins: [react()],

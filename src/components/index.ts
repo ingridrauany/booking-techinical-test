@@ -1,10 +1,11 @@
+export { Calendar } from './Calendar';
+export { CalendarContainer } from './CalendarContainer/index';
 export { CalendarHeaderDate } from './CalendarHeaderDate/index';
+export { CalendarTimeButton } from './CalendarTimeButton/index';
 export { Container } from './Container/index';
+export { Error } from './Error';
 export { LoadingOverlay } from './LoadingOverlay/index';
 export { ProfileContainer } from './ProfileContainer/index';
 export { ProfileInfo } from './ProfileInfo/index';
 export { ProfileName } from './ProfileName/index';
 export { ProfileStars } from './ProfileStars';
-export { Schedule } from './Schedule';
-export { ScheduleButton } from './ScheduleButton/index';
-export { ScheduleContainer } from './ScheduleContainer/index';

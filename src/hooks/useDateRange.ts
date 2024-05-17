@@ -1,22 +1,19 @@
+import { DateRangeType } from '@customTypes/DateRange';
+import { addDaysToDate, convertDateToString, getCurrentWeekMondayAndFriday } from '@utils/index';
 import { useState } from 'react';
 
-type DateRange = {
-  startDate: Date;
-  endDate: Date;
-};
+export const useDateRange = () => {
+  const today = new Date();
+  const [initialStartDate, initialEndDate] = getCurrentWeekMondayAndFriday(today);
+  const [dateRange, setDateRange] = useState<DateRangeType>({ startDate: initialStartDate, endDate: initialEndDate });
 
-export const useDateRange = (initialStartDate: Date, initialEndDate: Date) => {
-  const [dateRange, setDateRange] = useState<DateRange>({ startDate: initialStartDate, endDate: initialEndDate });
-
-  const changeDateRange = (action: string) => {
+  const changeDateRange = (action: string): void => {
     const increment = action === 'next' ? 1 : -1;
 
-    const prevDay = new Date(dateRange.startDate);
-    prevDay.setDate(prevDay.getDate() + increment);
+    const prevDay = addDaysToDate(dateRange.startDate, increment);
+    const nextDay = addDaysToDate(dateRange.endDate, increment);
 
-    const nextDay = new Date(dateRange.endDate);
-    nextDay.setDate(nextDay.getDate() + increment);
-    setDateRange({ startDate: prevDay, endDate: nextDay });
+    setDateRange({ startDate: convertDateToString(prevDay), endDate: convertDateToString(nextDay) });
   };
 
   return { dateRange, changeDateRange };

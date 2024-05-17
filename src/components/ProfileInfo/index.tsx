@@ -1,5 +1,5 @@
-import { ProfilePros } from 'src/types/Profile';
-import { ProfileStars } from '../ProfileStars';
+import { ProfileStars } from '@components/ProfileStars';
+import { ProfessionalType } from '@customTypes/Professional';
 import {
   ProfileDescriptionStyled,
   ProfileInfoStyled,
@@ -21,7 +21,7 @@ export const ProfileInfo = ({
   description,
   profilePicture,
   totalOfReviews,
-}: ProfilePros) => {
+}: ProfessionalType) => {
   return (
     <ProfileStyled>
       <ProfilePictureContainerStyled alt={name} src={`https://avatars.githubusercontent.com/${profilePicture}?v=4`} />

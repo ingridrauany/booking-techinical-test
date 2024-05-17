@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ScheduleButtonStyled = styled.button`
+export const CalendarTimeButtonStyled = styled.button`
   border: 0;
   background: #e1e1eb;
   margin: 5px;

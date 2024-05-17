@@ -1,6 +1,4 @@
-import { ScheduleData } from './Schedule';
-
-export type User = {
+export type ProfessionalType = {
   id: string;
   name: string;
   profession: string;
@@ -11,5 +9,4 @@ export type User = {
   timebox: string;
   description: string;
   profilePicture: string;
-  schedule: ScheduleData;
 };
